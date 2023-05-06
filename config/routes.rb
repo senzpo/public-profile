@@ -5,4 +5,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'web/welcome#index'
+  scope module: :web do
+    resources :motions, only: %i[index show]
+  end
 end
