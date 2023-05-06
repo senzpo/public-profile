@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: <%= ENV.fetch("DATABASE_HOST") { 'localhost' } %>
+  port: <%= ENV.fetch("DATABASE_PORT") { 5432 } %>
+  pool: <%= ENV.fetch("DATABASE_POOL") { 5 } %>
+  username: <%= ENV.fetch("DATABASE_USERNAME") { 'admin' } %>
+  password: <%= ENV.fetch("DATABASE_PASSWORD") { 'secret' } %>
+
+development:
+  <<: *default
+  database: public_profile_development
+
+test:
+  <<: *default
+  database: public_profile_test
+
+production:
+  <<: *default
+  database: public_profile_production
+  username: public_profile
+  password: <%= ENV["PUBLIC_PROFILE_DATABASE_PASSWORD"] %>
