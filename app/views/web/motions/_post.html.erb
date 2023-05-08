@@ -1,0 +1,39 @@
+<div class="post-preview" id="<%= anchor %>">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="<%= image_path(image) %>" class="img-fluid rounded-start" alt="high-load">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><%= title %></h5>
+          <p class="card-text"><%= text %></p>
+
+          <ul class="list-inline">
+            Рейтинг
+            <li class="list-inline-item">
+              <% rating.times do %>
+                <i class="fa-solid fa-star"></i>
+              <% end %>
+              <% (5 - rating).times do %>
+                <i class="fa-regular fa-star"></i>
+              <% end %>
+            </li>
+          </ul>
+
+          <ul class="list-inline">
+            Сложность
+            <li class="list-inline-item">
+              <% hard.times do %>
+                <i class="fa-solid fa-star"></i>
+              <% end %>
+              <% (5 - hard).times do %>
+                <i class="fa-regular fa-star"></i>
+              <% end %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
