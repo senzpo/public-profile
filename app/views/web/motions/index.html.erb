@@ -12,6 +12,7 @@
   </div>
 </header>
 <!-- Main Content-->
+
 <main class="mb-4">
   <div class="container px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -29,54 +30,264 @@
         <hr class="my-4" />
         <ul class="navbar-nav ms-auto">
           <li>Разработка
-            <ul>
-              <li><a href="#high_load">Высоконагруженные приложения. Мартин Клеппман</a></li>
-              <li><a href="#fauler_js_refactoring">Рефакторинг кода на JavaScript. М. Фаулер</a></li>
-              <li><a href="#clean_code">Чистый код, Р.Мартин</a></li>
-              <li><a href="#awesome_code">Cовершенный код, Макконнелл</a></li>
-              <li><a href="#clean_architecture">Чистая архитектура, Р.Мартин</a></li>
-              <li><a href="#ddd"></a>Domain Driven Design, Эванс</li>
-              <li><a href="#fauler_architecture">TODO: Проектирование корпоративного ПО, Фаулер</a></li>
-              <li><a href="#scalability_rules">Scalability Rules</a></li>
-              <li><a href="https://12factor.net/" target="_blank">https://12factor.net/</a></li>
-              <li><a href="#designing_distributed_systems">TODO: Designing Distributed Systems</a></li>
-              <li><a href="#building_evolutionary_architectures">Building Evolutionary Architecture</a></li>
-              <li><a href="#building_microserices">Создание микросервисов, Сэм Ньюмен</a></li>
-              <li><a href="#state_machine">Автоматное программирование</a></li>
-              <li><a href="#painless-rails">painless-rails</a></li>
+            <ul class="list-group list-group-flush">
+              <%= render partial: 'post', locals: {
+                image: "books/high_load.png",
+                anchor: "high_load",
+                title: "Высоконагруженные приложения: Программирование, масштабирование, поддержка. Мартин Клеппман",
+                text: "Стоит почитать",
+                rating: 5,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/fauler_js_refactoring.jpg",
+                anchor: "fauler_js_refactoring",
+                title: "Рефакторинг кода на JavaScript. М. Фаулер",
+                text: "Стоит почитать",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/clean_code.jpg",
+                anchor: "clean_code",
+                title: "Чистый код, Р.Мартин",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/awesome_code.jpg",
+                anchor: "awesome_code",
+                title: "Cовершенный код, Макконнелл",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/clean_architecture.jpg",
+                anchor: "clean_architecture",
+                title: "Чистая архитектура, Р.Мартин",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/ddd.jpg",
+                anchor: "ddd",
+                title: "Domain Driven Design, Эванс",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/scalability_rules.jpg",
+                anchor: "scalability_rules",
+                title: "Scalability Rules",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/building_evolutionary_architectures.jpg",
+                anchor: "building_evolutionary_architectures",
+                title: "Building Evolutionary Architecture",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+
+              <%= render partial: 'post', locals: {
+                image: "books/designing_distributed_systems.jpg",
+                anchor: "designing_distributed_systems",
+                title: "Designing Distributed Systems",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/fauler_architecture.jpg",
+                anchor: "fauler_architecture",
+                title: "Проектирование корпоративного ПО, Фаулер",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/building_microserices.webp",
+                anchor: "building_microserices",
+                title: "Создание микросервисов, Сэм Ньюмен",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/state_machine.jpg",
+                anchor: "state_machine",
+                title: "Автоматное программирование",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/painless_rails.jpg",
+                anchor: "painless_rails",
+                title: "Painless rails",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
             </ul>
           </li>
           <li>Основы
-            <ul>
-              <li><a href="#crack_alg">Грокаем алгоритмы</a></li>
-              <li><a href="#code">Код, Чарльз Петцольд</a></li>
-              <li><a href="#alg_long">Алгоритмы построение и анализ</a></li>
-              <li><a href="#sicp">СИКП</a></li>
-              <li><a href="#nets">Компьютерные сети, С. Таненбаум</a></li>
-              <li><a href="#cs_min">Теоретический минимум по Computer Science</a></li>
-              <li><a href="#modern_os">Современные операционные системы Таненбаум</a></li>
-              <li><a href="#unix_man">UNIX для систеного администратора</a></li>
-              <li><a href="#unix_dev">UNIX профессиональное программирование</a></li>
+            <ul class="list-group list-group-flush">
+              <%= render partial: 'post', locals: {
+                image: "books/crack_alg.webp",
+                anchor: "crack_alg",
+                title: "Грокаем алгоритмы",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/code.jpg",
+                anchor: "code",
+                title: "Код, Чарльз Петцольд",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/alg_long.webp",
+                anchor: "alg_long",
+                title: "Алгоритмы построение и анализ",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/sicp.png",
+                anchor: "sicp",
+                title: "СИКП",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/nets.webp",
+                anchor: "nets",
+                title: "Компьютерные сети, С.Таненбаум",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/cs_min.jpg",
+                anchor: "cs_min",
+                title: "Теоретический минимум по Computer Science",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/modern_os.jpg",
+                anchor: "modern_os",
+                title: "Современные операционные системы Таненбаум",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/unix_man.jpg",
+                anchor: "unix_man",
+                title: "UNIX для систеного администратора",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/unix_dev.webp",
+                anchor: "unix_dev",
+                title: "UNIX профессиональное программирование",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
             </ul>
           </li>
           <li>Вдохновение
-            <ul>
-              <li><a href="#ideal_programmer">Идеальный программист, Мартин</a></li>
-              <li><a href="#move_mount">Как сдвинуть гору Фудзи</a></li>
-              <li><a href="#system_design_interview">System Design Interview</a></li>
-              <li><a href="#spolsk">Спольски о программировании</a></li>
-              <li><a href="#spolsk_again">Спольски снова о программировании</a></li>
+            <ul class="list-group list-group-flush">
+              <%= render partial: 'post', locals: {
+                image: "books/ideal_programmer.jpg",
+                anchor: "ideal_programmer",
+                title: "Идеальный программист, Мартин",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/move_mount.webp",
+                anchor: "move_mount",
+                title: "Как сдвинуть гору Фудзи",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/system_design_interview.jpg",
+                anchor: "system_design_interview",
+                title: "System Design Interview",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/spolsk.jpg",
+                anchor: "spolsk",
+                title: "Спольски о программировании",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/spolsk_again.jpg",
+                anchor: "spolsk_again",
+                title: "Спольски снова о программировании",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
             </ul>
           </li>
           <li>Хранилища данных
-            <ul>
-              <li><a href="#seven_databases">7 баз данных за семь недель</a></li>
-              <li><a href="#psql_base">Основы технологий баз данных(Postgres)</a></li>
-              <li><a href="#psql_docs">Документация к PostgreSQL от Postgres Professional</a></li>
+            <ul class="list-group list-group-flush">
+              <%= render partial: 'post', locals: {
+                image: "books/seven_databases.jpg",
+                anchor: "seven_databases",
+                title: "7 баз данных за семь недель",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/psql_base.jpg",
+                anchor: "psql_base",
+                title: "Основы технологий баз данных(Postgres)",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/psql_docs.png",
+                anchor: "psql_docs",
+                title: "Документация к PostgreSQL от Postgres Professional",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
             </ul>
           </li>
           <li>Языки
-            <ul>
+            <ul class="list-group list-group-flush">
               <li><a href="#">Phoenix programming</a></li>
               <li><a href="#">Elixir in Action</a></li>
               <li><a href="#">Язык программирования Go. Алан А. А. Донован, Брайан У. Керниган</a></li>
@@ -90,7 +301,7 @@
             </ul>
           </li>
           <li>Управление и культура
-            <ul>
+            <ul class="list-group list-group-flush">
               <li><a href="http://agilemanifesto.org/iso/ru/principles.html" target="_blank">agilemanifesto</a></li>
               <li><a href="#">Getting Real 37 signals</a></li>
               <li><a href="#">Пять пороков команды</a></li>
@@ -101,85 +312,13 @@
             </ul>
           </li>
           <li>Продуктивность
-            <ul>
+            <ul class="list-group list-group-flush">
               <li><a href="#">The Passionate Programmer</a></li>
               <li><a href="#">Думай медлено решай быстро Даниэль Канеман</a></li>
               <li><a href="#">Джедайские техники</a></li>
             </ul>
           </li>
-          <li>Инвестирование
-            <ul>
-              <li><a href="#">Арсагера заметки инвестиции</a></li>
-              <li><a href="#">Разумный инвестор Бэнджамин</a></li>
-              <li><a href="#">Безон рынок ценных бумаг</a></li>
-            </ul>
-          </li>
         </ul>
-        <%= render partial: 'post', locals: {
-          image: "books/high_load.png",
-          anchor: "high_load",
-          title: "Высоконагруженные приложения: Программирование, масштабирование, поддержка. Мартин Клеппман",
-          text: "",
-          rating: 5,
-          hard: 3,
-        } %>
-        <%= render partial: 'post', locals: {
-          image: "books/fauler_js_refactoring.jpg",
-          anchor: "fauler_js_refactoring",
-          title: "Рефакторинг кода на JavaScript. М. Фаулер",
-          text: "",
-          rating: 3,
-          hard: 3,
-        } %>
-        <%= render partial: 'post', locals: {
-          image: "books/clean_code.jpg",
-          anchor: "clean_code",
-          title: "Чистый код, Р.Мартин",
-          text: "",
-          rating: 3,
-          hard: 3,
-        } %>
-        <%= render partial: 'post', locals: {
-          image: "books/awesome_code.webp",
-          anchor: "awesome_code",
-          title: "Cовершенный код, Макконнелл",
-          text: "",
-          rating: 3,
-          hard: 3,
-        } %>
-        <%= render partial: 'post', locals: {
-          image: "books/clean_architecture.jpg",
-          anchor: "clean_architecture",
-          title: "Чистая архитектура, Р.Мартин",
-          text: "",
-          rating: 3,
-          hard: 3,
-        } %>
-        <%= render partial: 'post', locals: {
-          image: "books/ddd.jpg",
-          anchor: "ddd",
-          title: "Domain Driven Design, Эванс",
-          text: "",
-          rating: 3,
-          hard: 3,
-        } %>
-        <%= render partial: 'post', locals: {
-          image: "books/scalability_rules.jpg",
-          anchor: "scalability_rules",
-          title: "Scalability Rules",
-          text: "",
-          rating: 3,
-          hard: 3,
-        } %>
-        <%= render partial: 'post', locals: {
-          image: "books/building_evolutionary_architectures.jpg",
-          anchor: "building_evolutionary_architectures",
-          title: "Building Evolutionary Architecture",
-          text: "",
-          rating: 3,
-          hard: 3,
-        } %>
-
       </div>
     </div>
   </div>
