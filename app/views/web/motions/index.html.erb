@@ -288,34 +288,174 @@
           </li>
           <li>Языки
             <ul class="list-group list-group-flush">
-              <li><a href="#">Phoenix programming</a></li>
-              <li><a href="#">Elixir in Action</a></li>
-              <li><a href="#">Язык программирования Go. Алан А. А. Донован, Брайан У. Керниган</a></li>
-              <li><a href="#">Изучаем TypeScript 3. Н. Розенталс</a></li>
-              <li><a href="#">Ruby. Объектно-ориентированное проектирование. Сэнди Метц</a></li>
-              <li><a href="#">7 моделей конкуренции и параллелизма  (2015)</a></li>
-              <li><a href="#">6_Ruby Under a Microscope_ An Illustrated Guide to Ruby Internals [Shaughnessy 2013-11-22]</a></li>
-              <li><a href="#">7 языков за семь недель  2017</a></li>
-              <li><a href="#">Eloquent Ruby - Olson (Addison Wesley 2011)</a></li>
-              <li><a href="#">learn.javascript.ru</a></li>
+              <%= render partial: 'post', locals: {
+                image: "books/phoenix_programming.jpg",
+                anchor: "phoenix_programming",
+                title: "Phoenix programming",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/elixir_in_action.png",
+                anchor: "elixir_in_action",
+                title: "Elixir in Action",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/go_lang.jpg",
+                anchor: "go_lang",
+                title: "Язык программирования Go. Алан А. А. Донован, Брайан У. Керниган",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/type_script.webp",
+                anchor: "type_script",
+                title: "Изучаем TypeScript 3. Н. Розенталс",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/ruby_matz.jpg",
+                anchor: "ruby_matz",
+                title: "Ruby. Объектно-ориентированное проектирование. Сэнди Метц",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/seven_models_concurrent.jpg",
+                anchor: "seven_models_concurrent",
+                title: "7 моделей конкуренции и параллелизма",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/ruby_under_microscope.jpg",
+                anchor: "ruby_under_microscope",
+                title: "Ruby Under a Microscope",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/seven_lang.jpg",
+                anchor: "seven_lang",
+                title: "7 языков за семь недель",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/eloquent_ruby.jpg",
+                anchor: "eloquent_ruby",
+                title: "Eloquent Ruby - Olson",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/learn.javascript.ru.png",
+                anchor: "learn_javascript_ru",
+                title: "learn.javascript.ru",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
             </ul>
           </li>
           <li>Управление и культура
             <ul class="list-group list-group-flush">
-              <li><a href="http://agilemanifesto.org/iso/ru/principles.html" target="_blank">agilemanifesto</a></li>
-              <li><a href="#">Getting Real 37 signals</a></li>
-              <li><a href="#">Пять пороков команды</a></li>
-              <li><a href="#">Как управлять интеллектуаллами</a></li>
-              <li><a href="#">Дилема Инноватора</a></li>
-              <li><a href="#">мифический человеко месяц</a></li>
-              <li><a href="#">OKR</a></li>
+              <%= render partial: 'post', locals: {
+                image: "books/agilemanifesto.png",
+                anchor: "agilemanifesto",
+                title: "agilemanifesto.org",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/37_signals.png",
+                anchor: "signals",
+                title: "Getting Real 37 signals",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/five_issues_of_team.png",
+                anchor: "five_issues_of_team",
+                title: "Пять пороков команды",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/geeks.webp",
+                anchor: "geeks",
+                title: "Как управлять интеллектуаллами",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/novators.jpg",
+                anchor: "novators",
+                title: "Дилема Инноватора",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/myth_month.jpg",
+                anchor: "myth_month",
+                title: "Мифический человеко месяц",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/okr.jpg",
+                anchor: "okr",
+                title: "Измеряйте самое важное(OKR)",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
             </ul>
           </li>
           <li>Продуктивность
             <ul class="list-group list-group-flush">
-              <li><a href="#">The Passionate Programmer</a></li>
-              <li><a href="#">Думай медлено решай быстро Даниэль Канеман</a></li>
-              <li><a href="#">Джедайские техники</a></li>
+              <%= render partial: 'post', locals: {
+                image: "books/passionate_programmer.jpg",
+                anchor: "passionate_programmer",
+                title: "The Passionate Programmer",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/think_slow.jpg",
+                anchor: "think_slow",
+                title: "Думай медлено решай быстро Даниэль Канеман",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
+              <%= render partial: 'post', locals: {
+                image: "books/ninza.png",
+                anchor: "ninza",
+                title: "Джедайские техники(Максим Дорофеев)",
+                text: "",
+                rating: 3,
+                hard: 3,
+              } %>
             </ul>
           </li>
         </ul>
